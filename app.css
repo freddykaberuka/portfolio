@@ -28,6 +28,9 @@ body {
   padding: 0 2rem 0 2rem;
   padding-top: 2rem;
 }
+.personal-info {
+  border-bottom-left-radius: 100px;
+}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -69,4 +72,28 @@ body {
 .personal-social-info h3 {
   color: #7f8cff;
   font-size: 16px;
+}
+
+/* section 2 */
+
+.portofolio {
+  display: grid;
+  margin-top: 100px;
+  height: auto;
+}
+.work-container {
+  display: grid;
+  padding: 10px;
+  background-color: #e5e5e5;
+  gap: 10px;
+}
+.work-technology ul {
+  display: flex;
+}
+button {
+  padding: 16px;
+  margin: 2px;
+}
+.work-skills ul {
+  display: flex;
 }
