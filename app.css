@@ -143,3 +143,73 @@ button {
 .tech {
   color: #7a869a;
 }
+
+/* about section */
+.about {
+  margin: 20px 0;
+  background-color: white;
+  display: grid;
+  border-top-right-radius: 100px;
+}
+.about-container {
+  padding: 20px;
+  display: grid;
+  padding-bottom: 150px;
+}
+
+.languages,
+.frameworker,
+.skills h2 {
+  margin: 30px 0;
+}
+.frameworker,
+.skills h2 {
+  margin: 30px 0;
+  border-bottom: 1px solid rgb(107, 103, 103);
+}
+.languages ul li {
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+  background-color: #f7f7f9;
+}
+.languages ul li p {
+  padding-top: 8px;
+  font-size: 20px;
+  padding-left: 14px;
+}
+
+/* contact section */
+.contact-container {
+  height: auto;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
+  margin-bottom: 150px;
+}
+.contact-details {
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: auto;
+}
+.contact-form {
+  display: grid;
+  row-gap: 13px;
+}
+.contact-form input {
+  justify-content: center;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #172b4d;
+}
+.contact-form textarea {
+  padding: 40px;
+  border-radius: 10px;
+  color: #b3bac5;
+  margin: 0 20px;
+}
+.contact-button {
+  margin: 0 20px;
+}
