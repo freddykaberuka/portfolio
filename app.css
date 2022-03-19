@@ -116,6 +116,14 @@ button {
   border: 2px solid #396df2;
   border-radius: 10px;
 }
+button:hover,
+button:active {
+  background-color: #4c73d6;
+  color: white;
+}
+button:disabled {
+  background-color: #fff;
+}
 .work-technology,
 .work-skills ul {
   display: flex;
@@ -212,4 +220,8 @@ button {
 }
 .contact-button {
   margin: 0 20px;
+}
+.contact-button:hover {
+  background-color: #4c73d6;
+  color: white;
 }
