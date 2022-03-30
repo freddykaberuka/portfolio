@@ -127,7 +127,7 @@ button:disabled {
 }
 .work-technology,
 .work-skills ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
   justify-content: left;
   text-align: center;
@@ -138,6 +138,7 @@ button:disabled {
   align-items: center;
   min-width: 70px;
   margin: 4px;
+  float: left;
 }
 .work-technology ul li {
   margin: 4px;
