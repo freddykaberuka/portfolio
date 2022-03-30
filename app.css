@@ -199,18 +199,31 @@ button:disabled {
 }
 
 /* contact section */
+footer {
+  background-color: #fff;
+}
 .contact-container {
-  height: auto;
+  height: 682px;
   background-color: #6070ff;
   border-top-left-radius: 100px;
-  margin-bottom: 150px;
+}
+.contact-header {
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+
 }
 .contact-details {
+  padding-top: 12px;
   margin: 20px;
   justify-content: center;
   text-align: center;
-  color: white;
-  height: auto;
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: 400;
 }
 .contact-form {
   display: grid;
@@ -219,18 +232,33 @@ button:disabled {
 .contact-form input {
   justify-content: center;
   margin: 0 20px;
-  padding: 10px;
+  padding: 16px 10px;
   border-radius: 8px;
-  color: #172b4d;
+  color: #172B4D;
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc;
+  font-family: 'Poppins';
+  font-size: 17px;
 }
 .contact-form textarea {
-  padding: 40px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 8px;
   color: #b3bac5;
   margin: 0 20px;
+  background-color: #fcfafa;
+  border: 1px solid #cfd8dc;
+  height: 170px;
+  font-size: 15px;
 }
+
 .contact-button {
   margin: 0 20px;
+}
+.cont-button {
+  width: 140px;
+  height: 48px;
+  align-items: center;
+  text-align: center;
 }
 .contact-button:hover {
   background-color: #4c73d6;
