@@ -203,10 +203,19 @@ footer {
   background-color: #fff;
 }
 .contact-container {
-  height: 682px;
+  height: 767px;
   background-color: #6070ff;
   border-top-left-radius: 100px;
 }
+.img-cont1 {
+  display: flex;
+  justify-content: space-between;
+}
+.top-eclipse {
+  padding-left: 180px;
+  padding-top: 10px;
+}
+
 .contact-header {
   font-family: Poppins;
   font-size: 40px;
@@ -214,7 +223,6 @@ footer {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-
 }
 .contact-details {
   padding-top: 12px;
@@ -234,8 +242,8 @@ footer {
   margin: 0 20px;
   padding: 16px 10px;
   border-radius: 8px;
-  color: #172B4D;
-  background-color: #ffffff;
+  color: #172b4d;
+  background-color: #fff;
   border: 1px solid #cfd8dc;
   font-family: 'Poppins';
   font-size: 17px;
@@ -253,6 +261,8 @@ footer {
 
 .contact-button {
   margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .cont-button {
   width: 140px;
@@ -262,5 +272,13 @@ footer {
 }
 .contact-button:hover {
   background-color: #4c73d6;
+  color: white;
+}
+.contact-button:active {
+  background-color: #4c73d6;
+  color: white;
+}
+.contact-button:disabled {
+  background-color: #6276a8;
   color: white;
 }
