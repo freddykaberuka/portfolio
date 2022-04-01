@@ -272,15 +272,15 @@ footer {
   align-items: center;
   text-align: center;
 }
-.contact-button:hover {
+.cont-button:hover {
   background-color: #4c73d6;
   color: white;
 }
-.contact-button:active {
+.cont-button:active {
   background-color: #4c73d6;
   color: white;
 }
-.contact-button:disabled {
+.cont-button:disabled {
   background-color: #6276a8;
   color: white;
 }
@@ -367,5 +367,38 @@ footer {
   }
   .personal-info-par {
     font-size: 16px;
+  }
+  .contact-details {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-headers {
+    padding: 0 375px;
+  }
+  .contact-form {
+    display: grid;
+    row-gap: 13px;
+    justify-content: center;
+  }
+  .contact-form input {
+    justify-content: center;
+    padding: 10px 10px;
+    width: 400px;
+    align-items: center;
+  }
+  .input-place {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-form textarea {
+    justify-content: center;
+    padding: 10px 10px;
+    width: 400px;
+  }
+  .contact-button {
+    justify-content: center;
   }
 }
