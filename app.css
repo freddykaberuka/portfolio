@@ -2,34 +2,43 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 /* stylelint-disable number-leading-zero */
 /* stylelint-disable rule-empty-line-before */
-* {
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background-color: #e5e5e5;
+  font-style: normal;
+  background-color: #f7f7f9;
   color: #344563;
-  line-height: 2;
+  line-height: 1.7;
 }
+.header-info2,
 .header-info {
   text-decoration: none;
   color: #6070ff;
+  font-size: 48px;
 }
-.header,
-.personal-info {
+
+.landing-page {
   height: auto;
-  background-image: url(./assets/mobilebg.PNG);
-  background-repeat: no-repeat;
+  background-image: url(./assets/bg-img.PNG);
   background-size: cover;
   background-position: left;
   padding: 0 2rem 0 2rem;
   padding-top: 2rem;
+  border-radius: 0 0 0 120px;
+  padding-bottom: 5rem;
 }
 .personal-info {
   border-bottom-left-radius: 100px;
+  height: 628px;
 }
 .top-nav {
   display: flex;
@@ -51,15 +60,17 @@ body {
   text-decoration: none;
   color: #172b4d;
   font-style: normal;
-  font-size: 40px;
   /* stylelint-disable-next-line csstree/validator */
   font-weight: 700, bold;
 }
 .personal-info-detail p {
   flex: none;
   flex-grow: 0;
-  font-size: 16px;
   margin: 10px 0;
+  font-size: 20px;
+}
+.personal-social-info {
+  padding-top: 30px;
 }
 .social-media ul {
   display: flex;
@@ -83,14 +94,19 @@ body {
   height: auto;
 }
 .work-container {
-  padding: 10px;
   background-color: white;
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   border: 10px solid white;
   border-radius: 10px;
-  height: auto;
-  margin-bottom: 88px;
+}
+.desktop-work {
+  background-color: white;
+  margin: 20px 20px 20px 10px;
+
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); */
+  border: 10px solid white;
+  border-radius: 10px;
 }
 
 .work-technology ul {
@@ -169,7 +185,7 @@ button:disabled {
 .languages,
 .frameworker,
 .skills h2 {
-  margin: 30px 0;
+  margin: 0;
 }
 .heading {
   display: flex;
@@ -267,15 +283,129 @@ footer {
   align-items: center;
   text-align: center;
 }
-.contact-button:hover {
+.cont-button:hover {
   background-color: #4c73d6;
   color: white;
 }
-.contact-button:active {
+.cont-button:active {
   background-color: #4c73d6;
   color: white;
 }
-.contact-button:disabled {
+.cont-button:disabled {
   background-color: #6276a8;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+  .logo-info {
+    display: block;
+  }
+  .desktop-work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work-container-wrap {
+    display: flex;
+  }
+  .card2 {
+    flex-direction: row-reverse;
+  }
+  .top-nav {
+    position: fixed;
+  }
+  .logo-info {
+    display: none;
+  }
+  .nav-link {
+    display: flex;
+    padding-right: 60px;
+  }
+  .nav-link-top {
+    padding: 10px;
+  }
+  .nav-link-top a {
+    text-decoration: none;
+    color: #344563;
+  }
+  .personal-info {
+    padding: 240px 80px 0 80px;
+  }
+  .personal-info-title a {
+    text-decoration: none;
+    color: #172b4d;
+    font-style: normal;
+  }
+  .header-info2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+  .portofolio {
+    padding: 10px;
+  }
+  .image-info img {
+    height: 338px;
+    object-fit: cover;
+  }
+  .work-container {
+    display: none;
+  }
+  .desktop-work {
+    display: block;
+    width: 95%;
+  }
+  .work-details p {
+    line-height: 24px;
+  }
+  .description-work {
+    padding-left: 30px;
+  }
+  .about-container-wrap {
+    display: flex;
+  }
+  .about-container-wrap-header {
+    width: 40%;
+    justify-content: center;
+    padding-left: 19px;
+  }
+  .about-container-wrap-skills {
+    width: 50%;
+    padding: 20px;
+  }
+  .contact-details {
+    margin-left: 30vw;
+    width: 447px;
+  }
+  .contact-button {
+    justify-content: center;
+  }
+  .languages ul {
+    display: flex;
+  }
+  .languages ul li {
+    margin: 16px;
+  }
+  .tech-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .tech-list img {
+    padding: 25px;
+  }
+  .tech-list p {
+    text-align: center;
+  }
+  .header-info {
+    font-size: 20px;
+  }
 }
