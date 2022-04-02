@@ -413,4 +413,7 @@ footer {
   .description-work {
     width: 100%;
   }
+  .image-info img:hover {
+    transform: translateY(-3rem);
+  }
 }
