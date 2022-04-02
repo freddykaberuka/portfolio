@@ -2,17 +2,22 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 /* stylelint-disable number-leading-zero */
 /* stylelint-disable rule-empty-line-before */
-* {
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background-color: #e5e5e5;
+  font-style: normal;
+  background-color: #f7f7f9;
   color: #344563;
-  line-height: 2;
+  line-height: 1.7;
 }
 .header-info2,
 .header-info {
@@ -20,15 +25,16 @@ body {
   color: #6070ff;
   font-size: 48px;
 }
-.header,
-.personal-info {
+
+.landing-page {
   height: auto;
-  background-image: url(./assets/mobilebg.PNG);
-  background-repeat: no-repeat;
+  background-image: url(./assets/bg-img.PNG);
   background-size: cover;
   background-position: left;
-  padding: 0 2rem;
+  padding: 0 2rem 0 2rem;
   padding-top: 2rem;
+  border-radius: 0 0 0 120px;
+  padding-bottom: 5rem;
 }
 .personal-info {
   border-bottom-left-radius: 100px;
