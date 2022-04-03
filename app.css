@@ -1,3 +1,4 @@
+/* stylelint-disable at-rule-empty-line-before */
 /* stylelint-disable no-missing-end-of-source-newline */
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 /* stylelint-disable number-leading-zero */
@@ -102,7 +103,7 @@ body {
 }
 .desktop-work {
   background-color: white;
-  margin: 20px 20px 20px 10px;
+  margin: 35px;
 
   /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); */
   border: 10px solid white;
@@ -354,7 +355,7 @@ footer {
     padding: 10px;
   }
   .image-info img {
-    height: 338px;
+    height: auto;
     object-fit: cover;
   }
   .work-container {
@@ -362,7 +363,6 @@ footer {
   }
   .desktop-work {
     display: block;
-    width: 95%;
   }
   .work-details p {
     line-height: 24px;
@@ -407,5 +407,10 @@ footer {
   }
   .header-info {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1266px) {
+  .description-work {
+    width: 100%;
   }
 }
