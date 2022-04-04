@@ -413,4 +413,10 @@ footer {
   .description-work {
     width: 100%;
   }
+  .image-info img:hover {
+    transform: translateY(-3rem);
+  }
+  .nav-link-top:hover {
+    transform: translateY(-0.5rem);
+  }
 }
