@@ -7,7 +7,7 @@
  - Html,css
 
  ### Live Demo
- [](https://freddykaberuka.github.io/portfolio/)
+ [freddykaberuka.github.io](https://freddykaberuka.github.io/portfolio/)
 
 ## Getting Started
 
