@@ -8,6 +8,9 @@
 
 ## Getting Started
 
+## Live Demo
+ [freddykaberuka.github.io](https://freddykaberuka.github.io/portfolio/)
+
 ### Setup
 
 Clone or Download Repository
@@ -29,6 +32,8 @@ and for the contributer i recommended to use [VSCode](https://code.visualstudio.
 - Twitter: [@trojanx07](https://twitter.com/trojanx07)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaberuka-freddy-853b08153/)
 
+## Contributor
+GitHub: [@Richez003](https://github.com/Richez003)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
