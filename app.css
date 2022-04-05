@@ -220,7 +220,8 @@ footer {
   background-color: #fff;
 }
 .contact-container {
-  height: 767px;
+  min-height: 767px;
+  height: auto;
   background-color: #6070ff;
   border-top-left-radius: 100px;
 }
@@ -256,21 +257,21 @@ footer {
 }
 .contact-form input {
   justify-content: center;
-  margin: 0 20px;
   padding: 16px 10px;
   border-radius: 8px;
   color: #172b4d;
   font-size: 17px;
+  width: 100%;
 }
 .contact-form textarea {
   padding: 10px;
   border-radius: 8px;
   color: #b3bac5;
-  margin: 0 20px;
   background-color: #fcfafa;
   border: 1px solid #cfd8dc;
   height: 170px;
-  font-size: 15px;
+  font-size: 17px;
+  width: 100%;
 }
 
 .contact-button {
