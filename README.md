@@ -6,6 +6,9 @@
 
  - Html,css
 
+ ### Live Demo
+ [freddykaberuka.github.io](https://freddykaberuka.github.io/portfolio/)
+
 ## Getting Started
 
 ## Live Demo
