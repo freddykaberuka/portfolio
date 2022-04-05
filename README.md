@@ -11,6 +11,9 @@
 
 ## Getting Started
 
+## Live Demo
+ [freddykaberuka.github.io](https://freddykaberuka.github.io/portfolio/)
+
 ### Setup
 
 Clone or Download Repository
