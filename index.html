@@ -21,11 +21,24 @@
                     <div class="nav-link-top"><a href="#about">About</a></div>
                     <div class="nav-link-top"><a href="#contact">Contact</a></div>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="logo-info" viewBox="0 0 24 24">
-                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
-                </svg>
+                
+                <div id="hamburger-icon" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
             </div>
         </nav>
+        <script>
+            function toggleMenu(menu) {
+                menu.classList.toggle('open')
+            }
+        </script>
     </header>
         <section class="personal-info" id="home">
             <div class="personal-info-wrap">
