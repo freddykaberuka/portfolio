@@ -326,7 +326,7 @@ footer {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-.mobile-menu {
+.mobileMenu {
   display: none;
   position: fixed;
   padding-top: 100px;
@@ -336,14 +336,14 @@ footer {
   list-style: none;
 }
 
-.mobile-menu a {
+.mobileMenu a {
   text-decoration: none;
   font-size: 32px;
   font-weight: bold;
   color: white;
 }
 
-.open .mobile-menu {
+.open .mobileMenu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
