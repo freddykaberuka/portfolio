@@ -302,12 +302,17 @@ footer {
   display: none;
   cursor: pointer;
 }
+
 #hamburger-icon div {
   width: 35px;
   height: 3px;
   background-color: #6276a8;
   margin: 6px 0;
   transition: 0.5s;
+}
+.open {
+  background-color: #fff;
+  color: white;
 }
 .open .bar1 {
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
@@ -320,6 +325,7 @@ footer {
   -webkit-transform: rotate(45deg) translate(-6px, -8px);
   transform: rotate(45deg) translate(-6px, -8px);
 }
+
 .mobile-menu {
   display: none;
   position: fixed;
