@@ -117,8 +117,11 @@ const data = (id) => {
                 </div>
                 </div>
                 </div>
+<<<<<<< HEAD
                 </div>
                 </div>
+=======
+>>>>>>> 08e4a8a (add and update linters)
             </div> `;
   popSec.style.transform = 'translate(0%,0%) scale(1)';
 };
