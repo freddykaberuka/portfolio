@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="app.css">
+    
     <title>Freddy Kaberuka Portofolio</title>
 </head>
 <body>
@@ -54,7 +55,7 @@
             </div>
         </section>
     </section>
-        <section class="portofolio" id="portofolio">
+         <div class="portofolio" id="portofolio">
             <div class="work-container">
                 <div class="work-container-wrap">
                 <div class="image-info">
@@ -67,9 +68,9 @@
                 <div class="work-technology">
                     <ul>
                         <li class="">CANOPY</li>
-                        <li class=""><img src="assets/counter.png" alt=""></li>
+                        <li>&#9679;</li>
                         <li class="tech">Back End Dev</li>
-                        <li class=""><img src="assets/Counter.png" alt=""></li>
+                        <li>&#9679;</li>
                         <li class="date">2015</li>
                     </ul>
                 </div>
@@ -83,11 +84,61 @@
                         <li>javascript</li>
                     </ul>
                 </div>
-                <div class="work-button"><button>See Project</button></div>
+                <div class="work-button" id="seeLive"><button  onclick="toggleMore()">See Project</button></div>
+                </div>
+                </div>
+
+            </div>
+            <div class="work-container" id="popMobile">
+                <div class="work-container-wrap">
+                     <div class="pop-header">
+                     <div class="popup-work-title popHead"><h1 class="work-header" id="popHeader">Tonic</h1></div>
+                     <i class="fa-solid fa-xmark" id="popupClose"></i>  
+                   </div> 
+                <div class="work-technology">
+                    <ul>
+                        <li class="" id="location">CANOPY</li>
+                        <li class=""><img src="assets/counter.png" alt=""></li>
+                        <li class="tech" id="position">Back End Dev</li>
+                        <li class=""><img src="assets/Counter.png" alt=""></li>
+                        <li class="date" id="date">2015</li>
+                    </ul>
+                </div>
+                <div class="image-info">
+                <div class="port-image">
+                    <img src="assets/work1.png" alt="Tonic" class="img-work" id="popImage">
+                    </div>
+                    </div>
+                    <div class="description-work">
+                
+                <div class="work-details">
+                    <p class="work-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, but also the leap into 
+                        electronic typesetting, remaining essent
+                    </p>
+                </div>
+                <div class="work-skills">
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                    </ul>
+                </div>
+                <div class="btn">
+                <div class="work-button"><button>See Live
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </button></div>
+                <div class="work-button"><button>See Source 
+                    <i class="fa-brands fa-github"></i></button></div>
+                </div>
+                </div>
                 </div>
                 </div>
             </div>
-            <div class="desktop-work">
+            <div class="desktop-work" id="portCard">
                 <div class="work-container-wrap">
                 <div class="image-info">
                 <div class="port-image">
@@ -119,8 +170,66 @@
                 </div>
                 </div>
             </div>
+            <!-- <div class="popup-container" id="popupContainer">
+                <div class="pop-wrap"></div>
+                <div class="popup-work-container-wrap">
+                   <div class="pop-header">
+                     <div class="popup-work-title"><h1 class="work-header">Tonic</h1></div>
+                     <i class="fa-solid fa-xmark" id="popupClose"></i>  
+                   </div> 
+                <div class="popup-work-technology">
+                    <ul>
+                        <li class="">CANOPY</li>
+                        <li class=""><img src="assets/counter.png" alt=""></li>
+                        <li class="tech">Back End Dev</li>
+                        <li class=""><img src="assets/Counter.png" alt=""></li>
+                        <li class="date">2015</li>
+                    </ul>
+                </div>
+                <div class="popup-image-info">
+                <div class="popup-port-image">
+                    <img src="assets/Snapshoot1.png" alt="Tonic" class="img-work">
+                    </div>
+                    </div>
+                    <div class="popup-description-work">
+                
+                <div class="popup-work-details">
+                    <p class="work-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it 1960s with the 
+                        releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it 1960s with the 
+                        releorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the 
+                        releawn printer took a galley of type and scrambled it 1960s with the releaLorem 
+                        Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                        printer took a galley of type and scrambled it 1960s with the relea</p>
+                </div>
+                <div class="pop-skills-btn">
+                <div class="popup-work-skills">
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                    </ul>
+                </div>
+                <div class="btn">
+                <div class="work-button"><button>See Live
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </button></div>
+                <div class="work-button"><button>See Source 
+                    <i class="fa-brands fa-github"></i></button></div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div> -->
+            </div>
             
-            <div class="work-container">
+            <!-- <div class="work-container">
                 <div class="work-container-wrap">
                 <div class="image-info">
                 <div class="port-image"><img src="assets/work2.png" alt="Multi-Post Stories" class="img-work"></div>
@@ -299,7 +408,7 @@
                 <div class="work-button"><button>See Project</button></div>
                 </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="about" id="about">
@@ -322,7 +431,7 @@
                                 </ul>
                             </div>
                             <div class="work-button">
-                                <button>Get my resume</button>
+                                <button onclick="displaypopUp()">Get my resume</button>
                             </div>
                         </div>
                         </div> 
@@ -380,5 +489,6 @@
         </section>
         </footer>
         </section>
+<script src="./app.js"></script>
 </body>
 </html>

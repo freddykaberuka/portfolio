@@ -297,8 +297,77 @@ footer {
   background-color: #6276a8;
   color: white;
 }
+.popup-container { 
+  display: none;
+  background-color: white;
+  margin: 30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 10px solid white;
+  border-radius: 10px;
+}
+.pop-wrapper {
+  height: calc(100% - 40px);
+  padding: 20px 20px 20px 10px;
+  overflow: scroll;
+  margin: 35px;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.pop-header {
+  display: flex;
+  justify-content: space-between;
+}
+#popupClose {
+  padding-top: 10px;
+}
+
+.popup-port-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.popup-work-technology ul {
+  display: flex;
+}
+.popup-work-technology ul li {
+  list-style: none;
+  justify-content: space-around;
+  padding: 10px;
+}
+.popup-description-work {
+  display: flex;
+}
+.popup-work-skills ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+}
+.popup-work-skills ul li {
+  justify-content: left;
+  padding-left: 10px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  align-items: center;
+  min-width: 70px;
+  margin: 4px;
+}
+.pop-skills-btn {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  display: flex;
+}
 
 @media screen and (max-width: 768px) {
+  /* .popup-container {
+    display: block;
+  } */
   .nav-link {
     display: none;
   }
@@ -311,6 +380,14 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  #popMobile.active .portofolio {
+    background: blue;
+    height: 100vh;
+    width: 100vw;
+  }
+  .popup-container {
+    display: block;
+  }
   .work-container-wrap {
     display: flex;
   }
