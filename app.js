@@ -207,3 +207,18 @@ form.addEventListener('submit', (e) => {
     form.action = 'https://formspree.io/f/mwkynqkg';
   }
 });
+
+// local storage
+
+const store = (data) => {
+  window.localStorage.setItem('formData', JSON.stringify(data));
+  return data;
+};
+const readData = () => {
+  const storedData = window.localStorage.getItem('formData');
+  if (!storedData) return;
+  const data = JSON.parse(storedData);
+  document.getElementById('Names').value = data.Names;
+  document.getElementById('email').value = data.email;
+  document.getElementById('comments').value = data.comments;
+};
