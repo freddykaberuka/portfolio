@@ -273,6 +273,10 @@ footer {
   font-size: 17px;
   width: 100%;
 }
+form span {
+  color: #df4759;
+  font-size: 15px;
+}
 
 .contact-button {
   margin: 0 20px;
