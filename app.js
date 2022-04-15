@@ -117,11 +117,8 @@ const data = (id) => {
                 </div>
                 </div>
                 </div>
-<<<<<<< HEAD
                 </div>
                 </div>
-=======
->>>>>>> 08e4a8a (add and update linters)
             </div> `;
   popSec.style.transform = 'translate(0%,0%) scale(1)';
 };
@@ -196,3 +193,17 @@ const portofolioData = () => {
   portofolio.innerHTML = items;
 };
 window.addEventListener('load', portofolioData);
+
+// form Validation
+const form = document.getElementsByTagName('form')[0];
+const emailError = form.getElementsByTagName('span');
+
+form.addEventListener('submit', (e) => {
+  const email = form.email.value;
+  if (email.toLowerCase() !== email) {
+    e.preventDefault();
+    emailError[0].innerHTML = 'Please Entrer a valid email in lowercase';
+  } else {
+    form.action = 'https://formspree.io/f/mwkynqkg';
+  }
+});
