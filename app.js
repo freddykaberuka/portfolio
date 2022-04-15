@@ -17,11 +17,11 @@ form.addEventListener('submit', (e) => {
 // local storage
 
 const store = (data) => {
-  window.localStorage.setItem('formData', JSON.stringify(data));
+  window.localStorage.setItem('dataForm', JSON.stringify(data));
   return data;
 };
 const readData = () => {
-  const storedData = window.localStorage.getItem('formData');
+  const storedData = window.localStorage.getItem('dataForm');
   if (!storedData) return;
   const data = JSON.parse(storedData);
   document.getElementById('Names').value = data.Names;
