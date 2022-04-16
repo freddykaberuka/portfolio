@@ -1,6 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-// eslint-disable-next-line func-names
-// eslint-disable-next-line no-unused-vars
-const toggleMenu = function (menu) {
-  menu.classList.toggle('open');
-};
+const menu = document.getElementById('hamburger');
+const navContainer = document.getElementById('navContainer');
+const closeNav = document.getElementById('close');
+menu.addEventListener('click', () => {
+  navContainer.style.display = 'block';
+  menu.style.display = 'none';
+});
+closeNav.addEventListener('click', () => {
+  menu.style.display= 'block';
+  navContainer.style.display = 'none';
+});
