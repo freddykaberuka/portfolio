@@ -297,10 +297,48 @@ footer {
   background-color: #6276a8;
   color: white;
 }
-
+.fa-bars {
+  font-size: 30px;
+  color: #396df2;
+  display: none;
+}
+.fa-times {
+  font-size: 30px;
+  display: none;
+}
 @media screen and (max-width: 768px) {
-  .nav-link {
+  .links-container {
     display: none;
+  }
+  .fa-times {
+    right: 30px;
+    top: 50px;
+    position: absolute;
+  }
+  .fa-bars,
+  .fa-times {
+    display: block;
+  }
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(79, 97, 255, 0.8);
+    backdrop-filter: blur(5px);
+    top: 0;
+    bottom: 0;
+    padding-top: 100px;
+  }
+  .nav-link-top a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
   }
   .logo-info {
     display: block;
